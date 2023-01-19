@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+  <body>
+    <div class="container g-0">
+      <div class="row" style="height:400px;"></div>
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+          <h1 style="font-size:100px;">Responsive Website Test</h1>
+          <h6 style="font-size:50px;">with cat pictures</h6>
+        </div>
+      </div>
+      <div class="row" style="background-color:brown; height:10px;"></div>
+      <div class="row" style="height:200px;"></div>
+      <div class="row" style="background-color:brown;">
+        <div class="col-1"></div>
+        <div class="col-3 my-auto">
+          <img src="images/cat5.jpg" alt="">
+        </div>
+        <div class="col-1"></div>
+        <div class="col-6" style="font-size:50px;">
+          <b>Objectives</b> <br>
+          <ul>
+            <li>Give you feedback about your current proficiency for web design and frontend development</li>
+            <li>Help you review skills for the upcoming content in DIG345.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+          <h4>Instructions</h4>
+          <button class="accordion">Section 1</button>
+          <div class="panel">
+            <p>Lorem ipsum...</p>
+          </div>
+
+          <button class="accordion">Section 2</button>
+          <div class="panel">
+            <p>Lorem ipsum...</p>
+          </div>
+
+          <button class="accordion">Section 3</button>
+          <div class="panel">
+            <p>Lorem ipsum...</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <!-- javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+      var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+    </script>
+  </body>
+</html>
